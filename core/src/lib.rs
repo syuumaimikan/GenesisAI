@@ -1,14 +1,11 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+pub mod bus;
+pub mod embedding;
+pub mod error;
+pub mod message;
+pub mod multi_agent;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use bus::EventBus;
+pub use embedding::EmbeddingEngine;
+pub use error::GenesisError;
+pub use message::{EventPayload, MessageEnvelope};
+pub use multi_agent::{AgentRole, DistributedAgent};

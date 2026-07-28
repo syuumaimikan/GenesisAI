@@ -1,5 +1,6 @@
 [workspace]
 members = [
+    "genesis_main",
     "core",
     "runtime",
     "memory",
@@ -8,7 +9,7 @@ members = [
     "plugin-sdk",
     "agent-desktop",
     "npc-runtime"
-]
+, "self_improvement"]
 resolver = "2"
 
 [profile.release]

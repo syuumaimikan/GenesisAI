@@ -1,8 +1,7 @@
-# planning/Cargo.toml
 [package]
-name = "genesis-planning"
+name = "genesis_self_improvement"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 genesis-core = { path = "../core" }
@@ -13,6 +12,5 @@ anyhow = "1.0"
 thiserror = "1.0"
 tracing = "0.1"
 uuid = { version = "1.6", features = ["v4", "serde"] }
-petgraph = "0.6"
-reqwest = { version = "0.11", features = ["json"] } # 追加
-async-trait = "0.1"                                  # 追加
+petgraph = "0.6" # タスク実行DAG（有向非巡回グラフ）構築用
+async-trait = "0.1"

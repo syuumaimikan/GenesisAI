@@ -1,4 +1,3 @@
-// core/src/error.rs
 use thiserror::Error;
 
 #[derive(Error, Debug)]
