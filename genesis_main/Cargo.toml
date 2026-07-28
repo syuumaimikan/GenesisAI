@@ -3,10 +3,6 @@ name = "genesis_main"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "genesis_main"
-path = "src/main.rs"
-
 [dependencies]
 # パスを「./」から「../」に変更し、親ディレクトリのメンバを参照させます
 genesis-core = { path = "../core" }

@@ -9,7 +9,9 @@ members = [
     "plugin-sdk",
     "agent-desktop",
     "npc-runtime"
-, "self_improvement"]
+, "self_improvement",
+ "cli_frontend",
+ "tauri_frontend/src-tauri"]
 resolver = "2"
 
 [profile.release]
